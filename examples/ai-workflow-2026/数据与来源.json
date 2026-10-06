@@ -1,0 +1,167 @@
+{
+  "title": "AI进了工作流，收益还在路上",
+  "accessed": "2026-10-06",
+  "canvas": {
+    "width": 1024,
+    "height": 5888,
+    "export_width": 2160,
+    "export_height": 12420,
+    "adapter_scale": 0.8695652173913043
+  },
+  "style": {
+    "name": "纸上工作现场",
+    "background": "#F6F1E8",
+    "ink": "#171C1C",
+    "orange": "#B8432F",
+    "teal": "#1F5260",
+    "muted": "#65716C",
+    "serif": "Noto Serif SC",
+    "sans": "Noto Sans SC",
+    "image_model": "Image-2",
+    "illustrations": "four separate generated images; text and data are native objects"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "McKinsey — The state of AI in 2026: On the road to ROI",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "published": "2026-08-25",
+      "survey": "2026-05-04至06-08，1719名受访者，97个国家，按各国GDP加权；企业员工自报，不代表所有企业普查"
+    },
+    {
+      "id": "S2",
+      "title": "Stanford HAI — AI Index Report 2026, Technical Performance",
+      "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_2_technical.pdf",
+      "pages": "113–114（PDF页序46–47）",
+      "period": "报告记录的2025至2026年初领先结果，不是2026年10月实时排行榜"
+    },
+    {
+      "id": "S3",
+      "title": "METR — We are Changing our Developer Productivity Experiment Design",
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "published": "2026-02-24",
+      "caution": "2025后期数据受参与者及任务选择偏差影响，作者认为不足以可靠估计当前提速幅度；区间是95%置信区间"
+    },
+    {
+      "id": "S4",
+      "title": "IEA — Key Questions on Energy and AI, Executive summary",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "published": "2026",
+      "caution": "数据中心总用电不是AI单独用电；2030为中心情景预测，2025为估计值"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F1",
+      "source": "S1",
+      "metric": "报告在全企业范围扩大AI部署的受访者占比",
+      "unit": "%",
+      "values": {
+        "2025": 38,
+        "2026": 44
+      },
+      "derivation": "+6个百分点；2025基线按2026报告所给，未拼接旧网页摘要"
+    },
+    {
+      "id": "F2",
+      "source": "S1",
+      "metric": "在至少一个职能扩大AI智能体部署的受访者占比",
+      "unit": "%",
+      "large_revenue": "年收入超过10亿美元",
+      "values": {
+        "large2025": 27,
+        "large2026": 40,
+        "small2025": 22,
+        "small2026": 22
+      },
+      "derivation": "大型组织+13个百分点，较小组织基本持平；非同一企业跟踪面板"
+    },
+    {
+      "id": "F3",
+      "source": "S2",
+      "metric": "报告记录的领先AI与人类基线，按各自评测定义的任务表现",
+      "unit": "%",
+      "values": {
+        "OSWorld_AI": 66.3,
+        "OSWorld_human": 72.35,
+        "WebArena_AI": 74.3,
+        "WebArena_human": 78.24
+      },
+      "caution": "不同基准各自比较，不合成总分；圆整显示人类基线72.4、78.2，几何用原始值"
+    },
+    {
+      "id": "F4",
+      "source": "S1",
+      "metric": "称企业因可用编码智能体自建，放弃至少一项软件产品或功能采购的受访者占比",
+      "unit": "%",
+      "values": {
+        "yes": 32
+      },
+      "caution": "100格中32格着色，剩余68格只是其他回应；不是软件市场份额"
+    },
+    {
+      "id": "F5",
+      "source": "S1",
+      "metric": "三种不同问卷问题的肯定回应占比",
+      "unit": "%",
+      "values": {
+        "individual_productivity": 80,
+        "better_decisions": 50,
+        "enterprise_EBIT": 37
+      },
+      "caution": "彼此不是互斥类别，不加总，不画漏斗；EBIT=息税前利润"
+    },
+    {
+      "id": "F6",
+      "source": "S3",
+      "metric": "AI允许组相对不允许组完成任务所需时间的变化",
+      "unit": "%",
+      "values": [
+        {
+          "period": "2025初期",
+          "group": "原始样本",
+          "estimate": 19,
+          "low": 2,
+          "high": 39
+        },
+        {
+          "period": "2025后期",
+          "group": "原样本回访",
+          "estimate": -18,
+          "low": -38,
+          "high": 9
+        },
+        {
+          "period": "2025后期",
+          "group": "新招募样本",
+          "estimate": -4,
+          "low": -15,
+          "high": 9
+        }
+      ],
+      "caution": "负值=时间减少；后期两组区间跨0并有选择偏差，不能断言所有开发者提速"
+    },
+    {
+      "id": "F7",
+      "source": "S4",
+      "metric": "全球数据中心年用电",
+      "unit": "TWh",
+      "values": {
+        "2025_estimate": 485,
+        "2030_central_projection": 950
+      },
+      "derivation": "950/485=1.9588，约1.96倍；图从0起，预测用虚线轮廓"
+    },
+    {
+      "id": "F8",
+      "source": "S4",
+      "metric": "2025年用电量同比增长",
+      "unit": "%",
+      "values": {
+        "all_data_centres": 17,
+        "AI_focused_data_centres": 50
+      },
+      "caution": "AI专用数据中心是不同统计范围，增长率可对照，不能相加"
+    }
+  ]
+}

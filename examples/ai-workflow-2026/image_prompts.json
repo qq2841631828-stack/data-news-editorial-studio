@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "requested_model": "Image-2",
+  "transparent_background": false,
+  "assets": [
+    {
+      "asset": "cover.png",
+      "prompt": "Use Image-2. Editorial illustration for a Chinese data-news long infographic on AI moving from chat into real work. Wide 3:2 image, no text, no charts, no digits, no logos. A thoughtful human at a large desk, paper documents flowing into layered translucent computer windows and connected mechanical drafting hands, grounded everyday office not science-fiction robot. Single compelling composition in printmaking / ink and cut-paper collage, warm ivory paper #F6F1E8, charcoal black, burnt orange #B8432F and deep teal #1F5260 only; visibly hand-crafted fine grain. Subjects occupy lower and right areas; generous upper-left blank paper to overlay an editorial headline separately. Elegant mature newspaper feature art, strong silhouettes, coherent perspective, no decorative UI tiles."
+    },
+    {
+      "asset": "execution.png",
+      "prompt": "Use Image-2. One standalone editorial cut-paper and engraved ink illustration, landscape 3:2. An ordinary computer mouse and hand connected to a path through a browser window, a spreadsheet sheet and folder; symbolic AI executing a sequence of real computer tasks. No legible text, no numbers, no graph, no logos, no robots. Warm ivory paper #F6F1E8, charcoal, burnt orange #B8432F, deep teal #1F5260, strong negative space and subtle tactile grain. Same mature magazine printmaking collage style; make a coherent single scene, not a collage of isolated icons."
+    },
+    {
+      "asset": "measurement.png",
+      "prompt": "Use Image-2. One standalone editorial illustration, landscape 3:2, hand-cut paper collage plus precise engraved ink. A human examining a stopwatch, annotated blank worksheets and a measuring ruler on a workbench, concept measuring AI productivity rather than assuming it. No text, digits, graph, logo or robot. Warm ivory paper #F6F1E8, charcoal black, burnt orange #B8432F and deep teal #1F5260 only. Calm mature data-journalism magazine illustration, one coherent scene, tactile print texture, spacious composition."
+    },
+    {
+      "asset": "energy.png",
+      "prompt": "Use Image-2. One standalone editorial illustration, landscape 3:2, refined engraved ink and hand-cut paper collage. Row of real data-centre server cabinets with copper power cables leading to electricity pylons and a transformer, showing the physical infrastructure behind AI. No text, numbers, graph, logos or robots. Warm ivory paper #F6F1E8, charcoal, burnt orange #B8432F and deep teal #1F5260 only. Mature newspaper visual, coherent scene, tactile paper texture, no neon or glossy 3D."
+    }
+  ]
+}

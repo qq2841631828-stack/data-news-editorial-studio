@@ -95,7 +95,7 @@
 - 不采用“Word → PDF → 渲染页面 → 拼成长图 PNG”。
 - **PDF 路径当前搁置**：不作为长图中间件，不作为默认交付物，也不把 PDF 页面拼接结果作为长图方案。
 - 不把 4–6 张模块图、分页文件或多张截图冒充“一张完整长图”。
-- 不把“已导入可画”或“可画页数正确”当成交付完成；在可画未通过正式导出与清晰度实测前，不将其列为默认生产工具。
+- 不把“已导入可画”或“可画页数正确”当成交付完成；默认采用可画前先通过代表模块的编辑能力、正式导出与清晰度实测。
 
 若用户另外要求 DOCX，它是独立报告交付物，不参与长图生产。若用户以后重新要求 PDF，先把它作为独立实验项验证稳定性，再决定是否恢复相关交付规范。
 
@@ -124,7 +124,7 @@ source_canvas:
 layout_tool:
   name: <actual tool or workflow>
   long_canvas_validation: PASS
-  note: Canva is not assumed; record actual validation if used
+  note: Canva target; record tested import route and actual object editability
 qa:
   locked_data_check: PASS
   style_lock_check: PASS
@@ -147,6 +147,45 @@ qa:
 - 参考图是否仅按声明范围使用，未污染 `Visual Style Lock`。
 
 任何一项失败，将状态改为 `NEEDS_REVIEW`、`IMAGE_DATA_VALIDATION_FAILED` 或 `VISUAL_QA_FAILED`，返工后重新导出；不得只在说明中承认问题后仍标记 `READY`。
+
+## SVG / 可画交付补充
+
+用户选择 AI → SVG → 可画时，以下内容与对应作品形态的交付要求同时适用：
+
+- `source_svg`：保留真实文字和精确几何的完整 SVG 母版、必要的模块 SVG。
+- `assets`：独立 AI 插画、照片与纹理素材；标明混合母版中的位图部分。
+- `objects`：对象清单、锁定文案、图表原始数据以及对应可画对象 id（取得后填写）。
+- `canva_design`：目标平台、可访问设计链接、实际尺寸与模块顺序；用户要求进入可画时必交。
+- `import_adapter`：实际使用 `direct_svg`、`svg_assets_native_text` 或 `svg_native_pptx`；使用 PPTX 适配时提供该文件。
+- `editability`：分别说明文字、独立图形、插画移动和原生图表数据联动的实测能力，不笼统写“全部可编辑”。
+- `preview_and_export`：导出代表模块与最终完整长图，记录尺寸、文件大小和全图/100%/200% QA。
+
+```yaml
+workflow: ai_visual_svg_canva
+status: SOURCE_READY | AWAITING_CANVA_VALIDATION | READY | DELIVERED
+svg_master:
+  file: <actual file>
+  text_objects: true
+  data_geometry: VERIFIED
+  raster_layers: <actual layer list or none>
+canva:
+  platform: canva.cn | canva.com
+  design_url: <actual URL or not yet available>
+  import_route: direct_svg | svg_assets_native_text | svg_native_pptx
+  validation_date: <actual date or not tested>
+editability:
+  native_text_edit: PASS | FAIL | NOT_TESTED
+  independent_shape_edit: PASS | FAIL | NOT_TESTED | NOT_REQUESTED
+  image_layer_move: PASS | FAIL | NOT_TESTED | NOT_REQUESTED
+  native_chart_data_update: PASS | FAIL | NOT_TESTED | NOT_REQUESTED
+export:
+  dimensions_check: PASS | FAIL | NOT_TESTED
+  original_100_percent_check: PASS | FAIL | NOT_TESTED
+  zoom_200_percent_check: PASS | FAIL | NOT_TESTED
+  seam_check: PASS | FAIL | NOT_TESTED | NOT_REQUESTED
+```
+
+母版可编辑、PPTX 对象可编辑和可画对象可编辑是三项独立事实，不能互相替代。只交付 PNG 不算完成 SVG / 可画可编辑交付；只交付多张模块也不算完成连续长图。账号或平台验证尚未完成时，保留源文件，报告 `AWAITING_CANVA_VALIDATION` 及具体待测项。
 
 ## 其他形态的最小交付
 

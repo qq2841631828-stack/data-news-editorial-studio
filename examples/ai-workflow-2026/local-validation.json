@@ -1,0 +1,87 @@
+{
+  "canvas": [
+    2160,
+    12420
+  ],
+  "native_slide_count": 1,
+  "editable_text_count": 145,
+  "independent_illustrations": 4,
+  "encoded_chart_geometry": [
+    {
+      "id": "F1-2025",
+      "encoded_value": 38.0,
+      "source_value": 38
+    },
+    {
+      "id": "F1-2026",
+      "encoded_value": 44.0,
+      "source_value": 44
+    },
+    {
+      "id": "F7-485",
+      "encoded_value": 485.0,
+      "source_value": 485
+    },
+    {
+      "id": "F7-950",
+      "encoded_value": 950.0,
+      "source_value": 950
+    },
+    {
+      "id": "F5-0",
+      "encoded_value": 80.0,
+      "source_value": 80
+    },
+    {
+      "id": "F5-1",
+      "encoded_value": 50.0,
+      "source_value": 50
+    },
+    {
+      "id": "F5-2",
+      "encoded_value": 37.0,
+      "source_value": 37
+    },
+    {
+      "id": "F8-0",
+      "encoded_value": 17.0,
+      "source_value": 17
+    },
+    {
+      "id": "F8-1",
+      "encoded_value": 50.0,
+      "source_value": 50
+    },
+    {
+      "id": "F3-OSWorld-AI",
+      "encoded_value": 66.3,
+      "source_value": 66.3
+    },
+    {
+      "id": "F3-OSWorld-human",
+      "encoded_value": 72.35,
+      "source_value": 72.35
+    },
+    {
+      "id": "F3-WebArena-AI",
+      "encoded_value": 74.3,
+      "source_value": 74.3
+    },
+    {
+      "id": "F3-WebArena-human",
+      "encoded_value": 78.24,
+      "source_value": 78.24
+    }
+  ],
+  "hashes": {
+    "AI进了工作流-可画单页导入.pptx": "14f8d39c464f87abe7135400c0448e0bbc5fb0b9039b176d9d8f4883f5840533",
+    "AI进了工作流-长图.svg": "6ae2124829bba8abdcbc81da2d037e2790a38dc0b6c2c95d0bfa63b91e7a9826",
+    "AI进了工作流-高清长图.png": "990277bcea32ebe95e0c1250e1959c073f70e4757fce3e47624cc6a1648018f4",
+    "objects.json": "f0f55f6efc09d190d4d20ccbcd75542d2aea9e0802e7aa291806e274319e5446",
+    "数据与来源.json": "4d240243a5542a7aec888a9de2c20a8dccbdfc27a6a77557f0a0e30cbaca513e",
+    "正文与来源.md": "5cce84d2b6bf118f19a201ceeea43b3204f5d1063a848b19d02e363c54e0c293",
+    "长图预览.png": "3a9dab6b25918d94d13d3b14088f2291939e0a0144e287395747183fa23ecfb5"
+  },
+  "canva_cn": "pending: browser upload blocked by Edge file-URL permission",
+  "tested": "SVG render and PPTX structural/import/encoded data checks; Canva actual edit/export pending"
+}
