@@ -1,0 +1,3 @@
+interface:
+  display_name: "数据叙事"
+  short_description: "用数据与证据构建新闻叙事，结合 Image-2 设计、可编辑 SVG 和可画排版验收"

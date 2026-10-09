@@ -1,0 +1,21 @@
+{
+  "scope": "完整代表模块v2，未验证完整超长作品",
+  "canva_url": "https://www.canva.cn/design/DAHXUxbn3Is/qYgDlJtH2HaEcpc7DvzACw/edit",
+  "status": "AWAITING_FINAL_EXPORT_VALIDATION",
+  "checks": {
+    "automatic_import": "PASS",
+    "title_background_separation_editor": "PASS",
+    "font_mapping": "PASS_AFTER_MAPPING_TO_思源宋体",
+    "local_native_geometry": "PASS",
+    "actual_final_png": "NOT_VERIFIED_DOWNLOAD_FAILED",
+    "100_200_percent_canva_export": "NOT_TESTED",
+    "image_independent_move": "NOT_TESTED",
+    "shape_color_edit": "NOT_TESTED"
+  },
+  "sha256": {
+    "assets/ai-clean-background-v2.png": "8ce1903bcae30f585caec703dbdc2f094849aedacb1cf15615b48fea546845b4",
+    "output/layout-first-editable-v2.svg": "2613e86fd7b13a74633211c44225a6ef17112cdc92183bbdbce022970e3a3bff",
+    "output/layout-first-canva-editable-v2.pptx": "44a39f0539e61aa03af8fcc10e0e800e890b8a2590ac2a96d2033eede0daf9a1",
+    "qa/canva-title-safe-v2.png": "3e99bfe7e6df063404911462799ef448eaa013c8bed951934542049b8ab1e8b8"
+  }
+}
